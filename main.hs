@@ -8,6 +8,7 @@ port    = 6667
 channel = "#stock"
 nick    = "StockBot-GHC"
 
+main :: IO ()
 main = do
     h <- connectTo server (PortNumber (fromIntegral port))
     hSetBuffering h NoBuffering
